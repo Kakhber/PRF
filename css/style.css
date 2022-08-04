@@ -58,7 +58,7 @@ header{
     justify-content: end;
     margin-top: 139px;
     margin-right: 354px;
-    align-items: center;
+    justify-content: center;
 
 }
 .my_img{
@@ -103,6 +103,7 @@ header{
 }
 .satisfied_line{
     flex-direction: column;
+    margin-bottom: 47px;
 }
 .line_red{
     width: 340px;

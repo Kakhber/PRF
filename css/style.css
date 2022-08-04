@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+header{
+    background-color: #DDDDDD;
+}
+.dflex{
+    display: flex;
+}
+.header{
+    max-width: 1920px;
+}
+.header_head{
+    justify-content: space-between;
+}
+.header_logo_firs h6{
+    color: #B3B3B3;
+    font-size: 13px;
+    font-family: Montserrat-Regular;
+}
+.header_logo{
+    margin-top: 48px;
+    margin-left: 52px;
+    align-items: flex-end;
+}
+.header_logo h3{
+    color: #1A1A1A;
+    font-size: 40px;
+    font-family: Poppins-ExtraBold;
+}
+.header_logo i{
+    color: #0081FF;
+    font-size: 33px;
+    font-family: Poppins-ExtraBold;
+}
+.header_logo_last{
+    align-items: center;
+    margin-right: 81.68px;
+    margin-top:25px;
+}
+.header_logo_last h2{
+    color: #1C1C1C;
+    font-size: 158.3px;
+    font-family: Poppins-ExtraBold;
+}
+.header_logo_last span{
+    position: absolute;
+    color: #373737;
+    font-size: 43.17px;
+    font-family: Poppins-ExtraBold;
+    top: 106px;
+    right: 82px;
+}
+.info_for_me{
+    justify-content: end;
+    margin-top: 139px;
+    margin-right: 354px;
+    align-items: center;
+
+}
+.my_img{
+    width: 400px;
+    margin-right: 25px;
+    border-radius: 35px;
+}
+.i_am h3{
+    color: #212121;
+    font-size: 49.7px;
+    font-family: GlacialIndifference-Regular;
+}
+.i_am h2{
+    color: #212121;
+    font-size: 71px;
+    font-family: GlacialIndifference-Bold;
+}
+.i_am span{
+    color: #212121;
+    font-size: 23.29px;
+    font-family: GlacialIndifference-Regular;
+}
+
+.social_icon{
+    width: 32px;
+}
+.header_satisfied{
+    margin-top: 182px;
+    margin-right: 97px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.header_satisfied i{
+    color: #E93656;
+    font-size: 24px;
+    font-family: Montserrat-Bold;
+}
+.header_satisfied h6{
+    color: #212121;
+    font-size: 24px;
+    font-family: Montserrat-Bold;
+}
+.satisfied_line{
+    flex-direction: column;
+}
+.line_red{
+    width: 340px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #E93656;
+}

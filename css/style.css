@@ -4,6 +4,9 @@
     font-size: 100%;
     box-sizing: border-box;
 }
+body{
+    overflow-y: auto;
+}
 header{
     background-color: #DDDDDD;
 }
@@ -62,6 +65,10 @@ header{
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    transition: color 0.25s, background-color 0.25s, border-radius;
+}
+.header_logo_last span:hover{
+    color: #E93656;
 }
 .info_for_me{
     margin:139px auto 0px auto;
@@ -120,7 +127,7 @@ header{
     background-color: #E93656;
 }
 .more_info{
-    /* max-width: 1920px; */
+    max-width: 1920px;
     justify-content: center;
     margin-top: 135px;
 }
@@ -159,7 +166,7 @@ header{
     border-radius: 12px;
 }
 .slideshow_conteiner{
-    width: 430px;
+    max-width: 430px;
     height: 603px;
     background-color: #555555;
     margin-left: 71px;
@@ -229,6 +236,11 @@ header{
     text-align: center;
     border: 2px dashed #FFFFFF;
     border-radius: 50%;
+    transition: background-color 0.25s, border;
+}
+.contact_icon span:hover{
+    border: none ;
+    background-color: #E93656;
 }
 .contact_icon h4{
     color: #FFFFFF;
@@ -239,6 +251,7 @@ header{
     color: #DFDFDF;
     font-size: 14px;
     font-family: Muli;
+    margin-top:10px;
 }
 .contact_icon div{
     margin-left: 30px;

@@ -28,8 +28,11 @@
     .header_head{
         display: none;
     }
+    .more_for_me p{
+        text-align: center;
+    }
     .more_info{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
@@ -48,5 +51,8 @@
     .contact_icon {
         justify-content: center;
         margin-bottom: 25px;
+    }
+    .my_knowledge{
+        display: none;
     }
 }

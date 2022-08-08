@@ -9,12 +9,14 @@
     header{
         border-radius: 18px 18px 0px 0px;
     }
-    .my_img{
+    /* .my_img{
         display: none;
-    }
+    } */
     .info_for_me {
         margin-top:0px;
         padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
     .header_satisfied{
@@ -24,9 +26,6 @@
     }
     .social{
         margin-top: 15px;
-    }
-    .header_head{
-        display: none;
     }
     .more_for_me p{
         text-align: center;
@@ -65,17 +64,19 @@
 
 
 @media (max-width: 767.98px){
-.service_grid{
-    grid-template-columns: 1fr 1fr;
+    .my_img{
+            display: none;
+    }
+        .service_grid{
+            grid-template-columns: 1fr 1fr;
+    }
 }
-
-}
-
 @media (max-width: 575.98px){
+.header_head{
+    display: none;
+}
 .service_grid{
     display: flex;
     flex-direction: column;
-
 }
-
 }

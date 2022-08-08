@@ -14,7 +14,9 @@ header{
     display: flex;
 }
 .max_header{
+    width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
 }
 .header_head{
     justify-content: space-between;
@@ -127,7 +129,9 @@ header{
     background-color: #E93656;
 }
 .more_info{
+    width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
     justify-content: center;
     margin-top: 135px;
 }
@@ -223,7 +227,9 @@ header{
     background-color: #131A36;
 }
 .contact_info{
+    width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
     justify-content: space-around;
     padding-top: 60px ;
 }
@@ -255,4 +261,54 @@ header{
 }
 .contact_icon div{
     margin-left: 30px;
+}
+.service_box{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service_grid{
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 160px;
+    /* padding-left: 365px;
+    padding-right: 380px; */
+    background-color: white;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.box{
+    /* width: 285px; */
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #FAFAFA;
+    background-size: contain;
+}
+.box:hover {
+    background-color: #15263E;
+}
+.box p{
+    color: #ECECEC;
+    font-size: 14px;
+    font-family: Muli-Light;
+    text-align: center;
+    opacity: 0;
+    transition: opacity;
+}
+/* .box p:hover{
+    opacity: 1;
+} */
+.box img{
+    width: 61px;
+}
+.recommendation_background{
+    height: 570px;
+    background-image:url(../img/background_png.png);
 }

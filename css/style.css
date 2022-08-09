@@ -168,6 +168,11 @@ header{
     font-size: 15px;
     font-family: GlacialIndifference-Bold;
     border-radius: 12px;
+    transition: opacity coursor 0.25s;
+}
+.more_for_me button:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
 .slideshow_conteiner{
     max-width: 430px;
@@ -178,6 +183,7 @@ header{
 }
 .slideshow_conteiner img{
     width: 100%;
+    height: 100%;
 }
 .my_knowledge{
     margin-top: 59px;
@@ -214,6 +220,8 @@ header{
     background-color: #15263E;
   }
 .img_change{
+    width: 100%;
+    height: 100%;
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -242,10 +250,11 @@ header{
     text-align: center;
     border: 2px dashed #FFFFFF;
     border-radius: 50%;
-    transition: background-color 0.25s, border;
+    transition: background-color 0.25s, border-color;
 }
 .contact_icon span:hover{
-    border: none ;
+    cursor: pointer;
+    border-color: #E93656;
     background-color: #E93656;
 }
 .contact_icon h4{
@@ -290,25 +299,107 @@ header{
     gap: 15px;
     background-color: #FAFAFA;
     background-size: contain;
+    position: relative;
+    transition: opacity 0.6s ease;
 }
 .box:hover {
-    background-color: #15263E;
+    background-color: #15263E; 
 }
 .box p{
     color: #ECECEC;
-    font-size: 14px;
+    font-size: 15px;
     font-family: Muli-Light;
     text-align: center;
     opacity: 0;
-    transition: opacity;
+    position: absolute;
 }
-/* .box p:hover{
+.box:hover div{
+    display: none;
+}
+.box:hover p{
     opacity: 1;
-} */
+}
 .box img{
-    width: 61px;
+    width: 100px;
+}
+.box h4{
+    color: #222222;
+    font-size: 22px;
+    font-family: GlacialIndifference-Bold;
 }
 .recommendation_background{
     height: 570px;
     background-image:url(../img/background_png.png);
+    background-color: #131A36;
+    background-position: center;
 }
+.recommendation_container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:210px;
+}
+.recommend-slideshow{
+    position: relative;
+    justify-content: space-between;
+}
+.myrecommendation{
+    display: none;
+}
+.recommend_div{
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+.recommend_div img{
+    max-width: 140px;
+    height: 140px;
+    padding: 15px;
+    border: 2px dashed #FFFFFF; 
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.dot-recommend{
+    width: 13px;
+    height: 13px;
+    margin-top: 50px;
+    background: #FFFFFF00 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #15263E;
+}
+.myrecommendation  {
+    animation-name: the_review;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes the_review {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .riviewp{
+    width: 370px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: Roboto-Light;
+    text-align: center;
+  }
+  .riview_name{
+    text-align: center;
+    width: 170px;
+    color: #FFFFFF;
+    font-size: 28px;
+  }
+  .dot-recommend_span{
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }

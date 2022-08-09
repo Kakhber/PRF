@@ -59,7 +59,18 @@
     }
 }
 @media (max-width: 991.98px){
-
+    .recommend_div{
+        flex-direction: column-reverse;
+    }
+    .recommendation_container{
+        flex-direction: column;
+    }
+    .dot-recommend_span{
+        flex-direction:row;
+    }
+    .dot-recommend{
+        margin:20px;
+    }
 }
 
 

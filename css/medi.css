@@ -31,6 +31,7 @@
         text-align: center;
     }
     .more_info{
+        margin-top: 35px;
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
@@ -89,5 +90,28 @@
 .service_grid{
     display: flex;
     flex-direction: column;
+    padding-top:44px;
+    padding-bottom: 44px;
+}
+.latest_section{
+    margin-top: 44px;
+}
+.latest_name{
+    font-size: 44px;
+    text-align: center;
+}
+.side_grid{
+    display: inline;
+}
+.side_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    margin: 0;
+    height: auto;
+}
+.side-list{
+    font-size: 10px;
+    flex-direction: row;
 }
 }

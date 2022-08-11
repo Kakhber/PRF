@@ -451,13 +451,24 @@ header{
     justify-content: center;
     align-items: center;
   }
-  .latest_grid div{
-    border: #DAAE19;
+  .p-element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #FAFAFA;
+    background-image: contain;
+    position: relative;
+    transition: opacity 0.2s, ease;
+    width: 100%;
+    height: 100%;
   }
   .p-element img{
     width: 100%;
     height: 100%;
   }
   .p-element div{
-    display: none;
+    position: absolute;
+    /* display: none; */
   }

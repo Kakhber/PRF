@@ -384,31 +384,31 @@ header{
 .myrecommendation  {
     animation-name: the_review;
     animation-duration: 1.5s;
-  }
+}
   
-  @keyframes the_review {
+@keyframes the_review {
     from {opacity: .4}
     to {opacity: 1}
-  }
-  .riviewp{
+}
+.riviewp{
     width: 370px;
     color: #FFFFFF;
     font-size: 15px;
     font-family: Roboto-Light;
     text-align: center;
-  }
-  .riview_name{
+}
+.riview_name{
     text-align: center;
     width: 170px;
     color: #FFFFFF;
     font-size: 28px;
-  }
-  .dot-recommend_span{
+}
+.dot-recommend_span{
     flex-direction: column;
     margin-bottom: 15px;
     font-size: 24px;
-  }
-  .latest_section{
+}
+.latest_section{
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -416,59 +416,85 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;;
-  }
-  .latest_name{
+}
+.latest_name{
     color: #2E2E2E;
     font-size: 70px;
     font-family: GlacialIndifference-Bold;
-  }
-  .side_grid{
+}
+.side_grid{
     margin-top: 55px;
     display: grid;
     grid-template-columns: 230px auto;
     height: auto;
-  }
-  .side_nav{
+}
+.side_nav{
     margin-right: 15px;
     height:400px;
     background-color:#15263E;
-  }
-  .side-list{
+}
+.side-list{
     flex-direction: column;
     color: #FFFFFF;
     font-size: 20px;
     font-family: GlacialIndifference-Bold;
     margin-top: 50px;
     text-align: center;
-  }
-  .li_list{
+}
+.li_list{
     margin-bottom: 15px;
-  }
-  .latest_grid{
+}
+.latest_grid{
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     justify-content: center;
     align-items: center;
-  }
-  .p-element{
+}
+.p-element{
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     gap: 15px;
     background-color: #FAFAFA;
-    background-image: contain;
     position: relative;
-    transition: opacity 0.2s, ease;
+    transition: transition all 3s linear;
     width: 100%;
     height: 100%;
-  }
-  .p-element img{
+    overflow: hidden;
+}
+.p-element img{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
     width: 100%;
     height: 100%;
-  }
-  .p-element div{
+    display: block;
+}
+.p-overlay{
     position: absolute;
-    /* display: none; */
-  }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.p-container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
+    font-size: 23px;
+    font-family: GlacialIndifference-Bold;
+    text-align: center;
+}
+.p-element:hover img{
+    transform:scale(1.5)
+}
+.p-element:hover .p-overlay{
+    opacity: 0.8;
+}

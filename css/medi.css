@@ -12,14 +12,14 @@
     /* .my_img{
         display: none;
     } */
-    .info_for_me {
+    .info-for-me {
         margin-top:0px;
         padding-top: 20px;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .header_satisfied{
+    .header-satisfied{
         margin-top: 60px;
         margin-right:0px;
         align-items: center;
@@ -27,46 +27,46 @@
     .social{
         margin-top: 15px;
     }
-    .more_for_me p{
+    .more-for-me p{
         text-align: center;
     }
-    .more_info{
+    .more-info{
         margin-top: 35px;
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
-    .more_for_me{
+    .more-for-me{
         align-items: center;
     }
-    .slideshow_conteiner{
+    .slideshow-conteiner{
         margin-top: 15px;
     }
-    .contact_section{
+    .contact-section{
         height: auto;
     }
-    .contact_info{
+    .contact-info{
         flex-direction: column;
     }
-    .contact_icon {
+    .contact-icon {
         justify-content: center;
         margin-bottom: 25px;
     }
-    .my_knowledge{
+    .my-knowledge{
         display: none;
     }
-    .satisfied_line{
+    .satisfied-line{
         align-items: center;
     }
 }
-@media (max-width: 991.98px){
-    .recommend_div{
+@media (max-width: 990){
+    .recommend-div{
         flex-direction: column-reverse;
     }
-    .recommendation_container{
+    .recommendation-container{
         flex-direction: column;
     }
-    .dot-recommend_span{
+    .dot-recommend-span{
         flex-direction:row;
     }
     .dot-recommend{
@@ -75,35 +75,35 @@
 }
 
 
-@media (max-width: 767.98px){
-    .my_img{
+@media (max-width: 770px){
+    .my-img{
             display: none;
     }
-        .service_grid{
+        .service-grid{
             grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 575.98px){
-.header_head{
+@media (max-width: 580px){
+.header-head{
     display: none;
 }
-.service_grid{
+.service-grid{
     display: flex;
     flex-direction: column;
     padding-top:44px;
     padding-bottom: 44px;
 }
-.latest_section{
+.latest-section{
     margin-top: 44px;
 }
-.latest_name .articles_name{
+.latest-name .articles-name{
     font-size: 44px;
     text-align: center;
 }
-.side_grid{
+.side-grid{
     display: inline;
 }
-.side_nav{
+.side-nav{
     display: flex;
     justify-content: space-around;
     align-items:center ;

@@ -11,10 +11,14 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("myslides_photo");
+  let slides = document.getElementsByClassName("myslides-photo");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -39,8 +43,12 @@ function currenRiview(n) {
     let i;
     let riviews = document.getElementsByClassName("myrecommendation");
     let dotRecommend = document.getElementsByClassName("dot-recommend");
-    if (n > riviews.length) {rivieweIndex = 1}
-    if (n < 1) {rivieweIndex = riviews.length}
+    if (n > riviews.length) {
+      rivieweIndex = 1;
+    }
+    if (n < 1) {
+      rivieweIndex = riviews.length;
+    }
     for (i = 0; i < riviews.length; i++) {
         riviews[i].style.display = "none";
     }

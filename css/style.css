@@ -415,7 +415,7 @@ header{
     margin-top:144px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
 }
 .latest_name{
     color: #2E2E2E;
@@ -497,4 +497,47 @@ header{
 }
 .p-element:hover .p-overlay{
     opacity: 0.8;
+}
+.latest_articles{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top:144px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.articles_name h6 {
+    color: #2ED279;
+    font-size: 13px;
+    font-family: GlacialIndifference-Bold;
+}
+.articles_name h2{
+    color: #2E2E2E;
+    font-size: 70px;
+    font-family: GlacialIndifference-Bold;
+}
+/* ტესტიიიიი */
+.articles_grid{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+        "article_box1 article_box2 article_box3";
+    background-color: #6B6B6B;
+}
+.article_box1{
+    background-color: green;
+    width: 800px;
+    height: 590px;
+}
+.article_box2{
+    background-color: #0081FF;
+    width: 123px;
+}
+.article_box3{
+    width: 950px;
+    background-color: #2ED279;
 }

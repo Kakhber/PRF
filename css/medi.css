@@ -96,7 +96,7 @@
 .latest_section{
     margin-top: 44px;
 }
-.latest_name{
+.latest_name .articles_name{
     font-size: 44px;
     text-align: center;
 }

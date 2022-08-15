@@ -288,8 +288,6 @@ header{
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 160px;
-    /* padding-left: 365px;
-    padding-right: 380px; */
     background-color: white;
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -298,7 +296,6 @@ header{
     justify-content: center;
 }
 .box{
-    /* width: 285px; */
     height: 360px;
     display: flex;
     flex-direction: column;
@@ -546,6 +543,8 @@ header{
     text-align: start;
 }
 .article-year{
+    align-items: center;
+    justify-content: center;
     background-color: #15263E;
     width: 10%;
 }
@@ -592,16 +591,129 @@ header{
     align-items: center;
     color: #E93656;
 }
-
-
-
-/* ტესტიიიიი */
-.article{
-    
-    height: 590px;
+.rosa-team{
+    margin: 0 auto;
+    margin-top: 175px;
+    max-width: 1440px;
+}
+.rosa-team h6{
+    color: #2ED279;
+    font-size: 14px;
+    font-family: GlacialIndifference-Bold;
+    text-align: center;
+}
+.rosa-team h2{
+    color: #262526;
+    font-size: 70px;
+    font-family: GlacialIndifference-Bold;
+    text-align: center;
+}
+.rosa-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #FAFAFA;
+    position: relative;
+    transition: transition all 3s linear;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.rosa-box{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    position: relative;
+}
+.rosa-box img{
+    border:2px solid black;
+    width: 100%;
+    height: 100%;
 }
 
-
+.rosa-boxes {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	transition: 0.5s;
+}
+.rosa-boxes:hover .rosa-box {
+	filter: blur(5px);
+	transform: scale(0.7);
+}
+.rosa-box {
+	position: relative;
+	width: 250px;
+	height: 300px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.rosa-boxes .rosa-box:hover {
+	filter: blur(0px);
+	transform: scale(1);
+}
+.rosa-box:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1;
+	transition: 0.5s;
+}
+.rosa-box:hover:before {
+	background: #DDDDDD;
+	transform: scaleY(1.15);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.rosa-box:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	transition: 0.5s;
+	background: rgba(255, 255, 255, 0.1);
+}
+.rosa-box:hover:after {
+	transform: scaleY(1.15);
+}
+.rosa-content {
+	text-align: center;
+	z-index: 2;
+	padding: 0 20px;
+	transition: 0.5s;
+}
+.rosa-box:hover .rosa-content {
+	color:#DAAE19
+}
+.rosa-content h2 {
+	font-size: 24px;
+}
+.rosa-content p {
+	font-size: 14px;
+}
+.rosa-content a {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 5px 10px;
+	background: #262626;
+	color: #fff;
+	text-decoration: none;
+}
+.rosa-box:hover .rosa-content a {
+	background: #2196f3;
+}
 .footer-section{
     height: 570px;
     background-image:url(../img/footer-cover.jpg);
@@ -713,28 +825,4 @@ header{
     color: #A0A8B7;
     font-size: 15px;
     font-family: Muli;
-}
-.rosa-team{
-    /* max-width: 1140px; */
-}
-.rosa-boxes{
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.rosa-box{
-    width: 250px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    position: relative;
-}
-.rosa-box img{
-    border:2px solid black;
-    width: 100%;
-    height: 100%;
-}
-.rosa-box h3{
-    position: absolute;
 }

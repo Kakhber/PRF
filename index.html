@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Kakha Beridze Beginer Frontend developer ">
+    <meta property="og:description" content="რეზიუმე კახა ბერიძე">
+    <meta property="og:image" content="https://blog.fluidui.com/assets/images/posts/computer-brain-interfaces.jpg">
+    <meta name="author" content="კახა ბერიძე" />
+    <meta name="description" content="დამიკავშირდით მითითებულ ნომერზე">
+    <meta name="keywords" content="საჭირო პროფესია, რეზიუმე, ნამუშევრები, საიტის შექმნა">
+    <link rel="shortcut icon" href="img/dont_stop_img.png" type="image/png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/medi.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <title>Document</title>
+    <title>Frontend development-Final project</title>
+    <script src="js/currenRiview.js"></script>
 </head>
 <body >
     <header >
@@ -245,45 +253,31 @@
             <div class="side-grid">
                 <div class="side-nav">
                     <ul class="side-list dflex">
-                        <li class="li-list">
-                            <a href="#">
-                                <span>All</span>
-                            </a>
+                        <li class="li-list" id="li-all">
+                            All
                         </li>
-                        <li class="li-list">
-                            <a href="#">
-                                <span>Job Portal Application</span>
-                            </a>
+                        <li class="li-list" id="jobportal">
+                            Job Portal Application
                         </li>
-                        <li class="li-list">
-                            <a href="#">
-                                <span>Online Personal Booking System</span>
-                            </a>
+                        <li class="li-list" id="PersonalProfessor">
+                            Online Personal Booking System
                         </li>
-                        <li class="li-list">
-                            <a href="#">
-                                <span>Cryptocurrency News Plugin</span>
-                            </a>
+                        <li class="li-list" id="Cryptocurrency">
+                            Cryptocurrency News Plugin
                         </li>
-                        <li class="li-list">
-                            <a href="#">
-                                <span>Cryptocurrency News Plugin</span>
-                            </a>
+                        <li class="li-list" id="CryptocurrencyNews">
+                            Cryptocurrency News Plugin
                         </li>
-                        <li class="li-list">
-                            <a href="#">
-                                <span>Online Classifieds Advertising Site</span>
-                            </a>
+                        <li class="li-list" id="OnlineClassifieds">
+                            Online Classifieds Advertising Site
                         </li>
-                        <li class="li-list">
-                            <a href="#">
-                                <span>Online Chess Learning and Playing Platform</span>
-                            </a>
+                        <li class="li-list" id="OnlineChess">
+                            Online Chess Learning and Playing Platform
                         </li>
                     </ul>
                 </div>
                 <div class="latest-grid">
-                    <div  class="p-element">
+                    <div  class="pelement active" data-filter="jobportal">
                         <img src="img/job_portal.jpg" alt="img">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -291,7 +285,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="p-element">
+                    <div  class="pelement" data-filter="PersonalProfessor">
                         <img src="img/online_booking.jpg" alt="bookingphoto">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -299,7 +293,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="p-element">
+                    <div  class="pelement" data-filter="Cryptocurrency">
                         <img src="img/personal_booking.jpg" alt="personalbooking">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -307,7 +301,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="p-element">
+                    <div  class="pelement" data-filter="CryptocurrencyNews">
                         <img src="img/crypto_online.jpg" alt="cryptoimg">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -315,15 +309,15 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="p-element">
-                        <img src="img/online_classifieds.jpg" alt="">
+                    <div  class="pelement" data-filter="OnlineClassifieds">
+                        <img src="img/online_classifieds.jpg" alt="img">
                         <div class="p-overlay">
                             <div class="p-container">
                                 <h4>Online Classifieds Advertising Site</h4>
                             </div>
                         </div>
                     </div>
-                    <div  class="p-element">
+                    <div  class="pelement" id="OnlineChess">
                         <img src="img/online_chess.jpg" alt="chessimg">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -453,6 +447,7 @@
             <p>© All right reserved 2019. Rosa - Creative Agency Website PSD Template.</p>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

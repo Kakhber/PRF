@@ -454,7 +454,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.p-element{
+.pelement{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -467,7 +467,7 @@ header{
     height: 100%;
     overflow: hidden;
 }
-.p-element img{
+.pelement img{
     transform: scale(1);
     transition: 0.3s ease-in-out;
     width: 100%;
@@ -495,10 +495,10 @@ header{
     font-family: GlacialIndifference-Bold;
     text-align: center;
 }
-.p-element:hover img{
+.pelement:hover img{
     transform:scale(1.5)
 }
-.p-element:hover .p-overlay{
+.pelement:hover .p-overlay{
     opacity: 0.8;
 }
 .latest-articles{
@@ -829,3 +829,4 @@ header{
     font-size: 15px;
     font-family: Muli;
 }
+

@@ -74,3 +74,4 @@ function currenRiview(n) {
     riviews[rivieweIndex-1].style.display = "block";
     dotRecommend[rivieweIndex-1].className += " active";
   }
+  

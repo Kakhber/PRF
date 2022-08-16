@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,11 +17,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <script src="form.js"></script>
     <title>Frontend development-Final project</title>
-    <script src="js/currenRiview.js"></script>
 </head>
-<body >
-    <header >
+
+<body>
+    <div id="modal" class="modal">
+        <div class="header">
+            <div class="close" onclick="closeModal()">X</div>
+        </div>
+        <div class="content">
+           
+        </div>
+    </div>   
+
+  
+
+    <header>
         <div class="max-header">
             <div class="header">
                 <div class="header-head dflex">
@@ -45,7 +58,7 @@
                         <span>I am Frontend Developer</span>
                         <div class="social  dflex">
                             <a href="https://www.facebook.com/kakha.beridze.1" target="_blank">
-                                 <img class="social-icon" src="img/facebook_icon.png" alt="fblogo">
+                                <img class="social-icon" src="img/facebook_icon.png" alt="fblogo">
                             </a>
                             <a href="https://www.instagram.com/kakhber/" target="_blank">
                                 <img class="social-icon" src="img/instagram_icon.png" alt="instalogo">
@@ -58,10 +71,10 @@
                             </a>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="header-satisfied dflex ">
-                    <div class="satisfied-line dflex" >
+                    <div class="satisfied-line dflex">
                         <h6><i>100%</i>Satisfied Clients</h6>
                         <span class="line-red"></span>
                     </div>
@@ -75,16 +88,21 @@
                 <div class="more-for-me dflex">
                     <h3>Kakha Beridze</h3>
                     <h5>Frontend Developer</h5>
-                    <p>I am Kakha Beridze from Tbilisi, Georgia. I am a beginner frontend developer. Currently, I am working in the security police department - as a security alarm system leading engineer. Learning a new profession is a challenge. This enchants me and It suppers me on, on a day to day basis</p>
-                    <p>Outside of work, family and friends keep me busy and happy all the time. I have an amazing family and insanely crazy friends. There’s no shortage of daily insanity and I don’t think I would want it any other way.</p>
+                    <p>I am Kakha Beridze from Tbilisi, Georgia. I am a beginner frontend developer. Currently, I am
+                        working in the security police department - as a security alarm system leading engineer.
+                        Learning a new profession is a challenge. This enchants me and It suppers me on, on a day to day
+                        basis</p>
+                    <p>Outside of work, family and friends keep me busy and happy all the time. I have an amazing family
+                        and insanely crazy friends. There’s no shortage of daily insanity and I don’t think I would want
+                        it any other way.</p>
                     <button>Hire Me</button>
                 </div>
                 <div class="slideshow-conteiner">
                     <div class="myslides-photo img-change">
-                        <img src="img/my_photo_1.jpg" >
+                        <img src="img/my_photo_1.jpg">
                     </div>
                     <div class="myslides-photo img-change">
-                        <img src="img/my_photo_2.jpg" >
+                        <img src="img/my_photo_2.jpg">
                     </div>
                     <div class="myslides-photo img-change">
                         <img src="img/my_photo_3.jpg">
@@ -144,7 +162,9 @@
             <div class="service-box">
                 <div class="service-grid">
                     <div class="box item-1">
-                        <p>Product management is key to making sure that the design and implementation of your app is as efficient as possible. Learn how the different mechanisms of a company work to solve problems effectively</p>
+                        <p>Product management is key to making sure that the design and implementation of your app is as
+                            efficient as possible. Learn how the different mechanisms of a company work to solve
+                            problems effectively</p>
                         <div>
                             <span>
                                 <img src="img/product_manage.webp" alt="test">
@@ -153,7 +173,9 @@
                         </div>
                     </div>
                     <div class="box item-2">
-                        <p>It's not only about what you build - it's also about how you present it to others, especially your investors. Along with peer mentors, you'll be mastering your startup's presentation for actual investors to look at</p>
+                        <p>It's not only about what you build - it's also about how you present it to others, especially
+                            your investors. Along with peer mentors, you'll be mastering your startup's presentation for
+                            actual investors to look at</p>
                         <div>
                             <span>
                                 <img src="img/investor_pitching.webp" alt="test">
@@ -162,7 +184,9 @@
                         </div>
                     </div>
                     <div class="box item-3">
-                        <p>Throughout the Startup Incubator, you'll be learning how to develop an app. This will enable you to prototype your idea with a proper tech stack!! It's always great to put words in code and show off your startup</p>
+                        <p>Throughout the Startup Incubator, you'll be learning how to develop an app. This will enable
+                            you to prototype your idea with a proper tech stack!! It's always great to put words in code
+                            and show off your startup</p>
                         <div>
                             <span>
                                 <img src="img/coding_img.webp" alt="test">
@@ -171,7 +195,9 @@
                         </div>
                     </div>
                     <div class="box item-4">
-                        <p>As you work with your mentors on developing your startup, you'll have a chance to network with them and inquire further about their industry. You'll also get a chance to collaborate and build a startup with like-minded peers</p>
+                        <p>As you work with your mentors on developing your startup, you'll have a chance to network
+                            with them and inquire further about their industry. You'll also get a chance to collaborate
+                            and build a startup with like-minded peers</p>
                         <div>
                             <span>
                                 <img src="img/networking_img.webp" alt="test">
@@ -180,7 +206,8 @@
                         </div>
                     </div>
                     <div class="box item-5">
-                        <p>Convincing people to buy your product is hard. You'll learn how to competitively price and develop marketing strategies for social media in order to sell effectively</p>
+                        <p>Convincing people to buy your product is hard. You'll learn how to competitively price and
+                            develop marketing strategies for social media in order to sell effectively</p>
                         <div>
                             <span>
                                 <img src="img/marketing_img.webp" alt="test">
@@ -189,7 +216,8 @@
                         </div>
                     </div>
                     <div class="box item-6">
-                        <p>Only designing features won't get you far! Learn key concepts on how to raise seed money for your startup and how to manage your monetary resources for maximum efficiency</p>
+                        <p>Only designing features won't get you far! Learn key concepts on how to raise seed money for
+                            your startup and how to manage your monetary resources for maximum efficiency</p>
                         <div>
                             <span>
                                 <img src="img/finance_img.webp" alt="test">
@@ -198,7 +226,10 @@
                         </div>
                     </div>
                     <div class="box item-7">
-                        <p>It's not easy to rationally think about a real-world problem and design a unique solution for it. As you rack your brains for innovation bursts, you'll learn how to critically think about specific issues that affect people. You'll also start thinking about the idea of feasibility and transforming creativity into a proper business idea</p>
+                        <p>It's not easy to rationally think about a real-world problem and design a unique solution for
+                            it. As you rack your brains for innovation bursts, you'll learn how to critically think
+                            about specific issues that affect people. You'll also start thinking about the idea of
+                            feasibility and transforming creativity into a proper business idea</p>
                         <div>
                             <span>
                                 <img src="img/critical_thinking.webp" alt="test">
@@ -207,11 +238,14 @@
                         </div>
                     </div>
                     <div class="box item-8">
-                        <p>This company will teach you to be inherently resourceful with what you have and still deliver a fantastic product. From mobile apps to simple mechanic gadgets, the power of simplicity and prototyping will eventually shine in your work</p>
-                        <div>                        <span>
-                            <img src="img/resourcefulness_img.webp" alt="test">
-                        </span>
-                        <h4>Resourcefulness</h4></div>
+                        <p>This company will teach you to be inherently resourceful with what you have and still deliver
+                            a fantastic product. From mobile apps to simple mechanic gadgets, the power of simplicity
+                            and prototyping will eventually shine in your work</p>
+                        <div> <span>
+                                <img src="img/resourcefulness_img.webp" alt="test">
+                            </span>
+                            <h4>Resourcefulness</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,21 +254,27 @@
                     <div class="recommend-slideshow dflex">
                         <div class="myrecommendation the-review">
                             <div class="recommend-div dflex">
-                                <p class="riviewp">"Where most vendors dislike working with in-house developers, Kakhber is more than willing to collaborate." </p>
+                                <p class="riviewp">"Where most vendors dislike working with in-house developers, Kakhber
+                                    is more than willing to collaborate." </p>
                                 <img src="img/kevin_moreno.png" alt="Kevin_moreno">
                                 <h4 class="riview-name">Kevin Moreno</h4>
                             </div>
                         </div>
                         <div class="myrecommendation the-review dflex">
                             <div class="recommend-div dflex">
-                                <p class="riviewp">Kakber developing and expanding the backend of a travel agency's online platform. They were designing the frontend and received an expanded scope. Technologies include Ruby on rails</p>
+                                <p class="riviewp">Kakber developing and expanding the backend of a travel agency's
+                                    online platform. They were designing the frontend and received an expanded scope.
+                                    Technologies include Ruby on rails</p>
                                 <img src="img/sergio_miguel.jpg" alt="sergiophoto">
                                 <h4 class="riview-name">Sergio Miguel Vieira</h4>
                             </div>
                         </div>
                         <div class="myrecommendation the-review">
                             <div class="recommend-div dflex">
-                                <p class="riviewp">Committed to excellent customer service and a collaborative project approach, the team delivered high-quality technical work that will be scalable for future adaptations of the project. Both internal and external stakeholders are satisfied with the work produced. Communication was clear</p>
+                                <p class="riviewp">Committed to excellent customer service and a collaborative project
+                                    approach, the team delivered high-quality technical work that will be scalable for
+                                    future adaptations of the project. Both internal and external stakeholders are
+                                    satisfied with the work produced. Communication was clear</p>
                                 <img src="img/kitty_kolding.png" alt="kittyphoto">
                                 <h4 class="riview-name">Kitty Kolding</h4>
                             </div>
@@ -253,31 +293,45 @@
             <div class="side-grid">
                 <div class="side-nav">
                     <ul class="side-list dflex">
-                        <li class="li-list" id="li-all">
-                            All
+                        <li class="li-list">
+                            <a href="#">
+                                <span>All</span>
+                            </a>
                         </li>
-                        <li class="li-list" id="jobportal">
-                            Job Portal Application
+                        <li class="li-list">
+                            <a href="#">
+                                <span>Job Portal Application</span>
+                            </a>
                         </li>
-                        <li class="li-list" id="PersonalProfessor">
-                            Online Personal Booking System
+                        <li class="li-list">
+                            <a href="#">
+                                <span>Online Personal Booking System</span>
+                            </a>
                         </li>
-                        <li class="li-list" id="Cryptocurrency">
-                            Cryptocurrency News Plugin
+                        <li class="li-list">
+                            <a href="#">
+                                <span>Cryptocurrency News Plugin</span>
+                            </a>
                         </li>
-                        <li class="li-list" id="CryptocurrencyNews">
-                            Cryptocurrency News Plugin
+                        <li class="li-list">
+                            <a href="#">
+                                <span>Cryptocurrency News Plugin</span>
+                            </a>
                         </li>
-                        <li class="li-list" id="OnlineClassifieds">
-                            Online Classifieds Advertising Site
+                        <li class="li-list">
+                            <a href="#">
+                                <span>Online Classifieds Advertising Site</span>
+                            </a>
                         </li>
-                        <li class="li-list" id="OnlineChess">
-                            Online Chess Learning and Playing Platform
+                        <li class="li-list">
+                            <a href="#">
+                                <span>Online Chess Learning and Playing Platform</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="latest-grid">
-                    <div  class="pelement active" data-filter="jobportal">
+                    <div class="p-element">
                         <img src="img/job_portal.jpg" alt="img">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -285,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="pelement" data-filter="PersonalProfessor">
+                    <div class="p-element">
                         <img src="img/online_booking.jpg" alt="bookingphoto">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -293,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="pelement" data-filter="Cryptocurrency">
+                    <div class="p-element">
                         <img src="img/personal_booking.jpg" alt="personalbooking">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -301,7 +355,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="pelement" data-filter="CryptocurrencyNews">
+                    <div class="p-element">
                         <img src="img/crypto_online.jpg" alt="cryptoimg">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -309,15 +363,15 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="pelement" data-filter="OnlineClassifieds">
-                        <img src="img/online_classifieds.jpg" alt="img">
+                    <div class="p-element">
+                        <img src="img/online_classifieds.jpg" alt="">
                         <div class="p-overlay">
                             <div class="p-container">
                                 <h4>Online Classifieds Advertising Site</h4>
                             </div>
                         </div>
                     </div>
-                    <div  class="pelement" id="OnlineChess">
+                    <div class="p-element">
                         <img src="img/online_chess.jpg" alt="chessimg">
                         <div class="p-overlay">
                             <div class="p-container">
@@ -338,7 +392,10 @@
                     <span class="material-icons">extension</span>
                     <h5>IN FREELANCING COMPANY</h5>
                     <h3>Graphic Designer</h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE
+                    </p>
                 </div>
                 <div class="article-year dflex">
                     <h4>2011-2012</h4>
@@ -354,7 +411,10 @@
                     <span class="material-icons">pie_chart</span>
                     <h5>IN FREELANCING COMPANY</h5>
                     <h3>Application Design</h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE
+                    </p>
                 </div>
             </div>
             <div class="articles-box dflex">
@@ -362,7 +422,10 @@
                     <span class="material-icons">rocket_launch</span>
                     <h5>IN FREELANCING COMPANY</h5>
                     <h3>Personal Adviser</h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE
+                    </p>
                 </div>
                 <div class="article-year dflex">
                     <h4>2011-2012</h4>
@@ -388,7 +451,8 @@
                             <img src="img/bagel_company.jpg" alt="bagelcompany">
                             <h2>New York Bagel Company</h2>
                             <p>
-                                New York Bagel Company has been an Islandia mainstay since opening its doors in 2009.</p>
+                                New York Bagel Company has been an Islandia mainstay since opening its doors in 2009.
+                            </p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
@@ -402,14 +466,14 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
     <footer class="footer-section">
         <div class="footer-map">
-            <div  class="footer-contact">
+            <div class="footer-contact">
                 <h2>CONTACT US</h2>
                 <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
                 <form class="footer-form" action="">
@@ -418,18 +482,19 @@
                         <input type="email" id="email" placeholder="Email Address*" required />
                         <input type="url" id="homepage" placeholder="Your Website*">
                     </div>
-                    <textarea name="Message" id="area-message" placeholder="Message" ></textarea>
+                    <textarea name="Message" id="area-message" placeholder="Message"></textarea>
                 </form>
-                <input class="contact-submit" type="submit" value="SEND MESSAGE">
+                <input class="contact-submit" type="submit" onclick="sendMessage()" value="SEND MESSAGE">
             </div>
         </div>
         <div class="footer-info">
-            <div class="footer-social" >
+            <div class="footer-social">
                 <h2>Roca<i>.</i></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
                 <div class="footer-icon  dflex">
                     <a href="https://www.facebook.com/kakha.beridze.1" target="_blank">
-                         <img class="footer-ic" src="img/facebook_icon.png" alt="fblogo">
+                        <img class="footer-ic" src="img/facebook_icon.png" alt="fblogo">
                     </a>
                     <a href="https://www.instagram.com/kakhber/" target="_blank">
                         <img class="footer-ic" src="img/instagram_icon.png" alt="instalogo">
@@ -447,7 +512,7 @@
             <p>© All right reserved 2019. Rosa - Creative Agency Website PSD Template.</p>
         </div>
     </footer>
-    <script src="js/app.js"></script>
-    <script src="js/form.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>

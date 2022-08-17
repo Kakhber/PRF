@@ -89,7 +89,6 @@ header {
 .info-for-me {
     margin: 139px auto 0px auto;
     justify-content: center;
-
 }
 
 .my-img {
@@ -125,7 +124,6 @@ header {
     margin-top: 15px;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .social-icon {
@@ -247,10 +245,61 @@ header {
     color: #E93656;
 }
 
-.my-knowledge div {
-    width: 300px;
+.my-knowledge .htmllvl {
+    width: 100px;
     height: 10px;
-    background-color: #F0F0F0;
+    background-color: #e60e0e;
+    animation-name: lvlhtml;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    position: absolute;
+}
+
+.my-knowledge .csslvl {
+    width: 100px;
+    height: 10px;
+    background-color: #e6480e;
+    animation-name: lvlcss;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    position: absolute;
+}
+
+.my-knowledge .jslvl {
+    width: 100px;
+    height: 10px;
+    background-color: #e6be0e;
+    animation-name: lvljs;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    position: absolute;
+}
+
+@keyframes lvlhtml {
+    from {
+        width: 00px;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes lvlcss {
+    from {
+        width: 00px;
+    }
+    to {
+        width: 200px;
+    }
+}
+
+@keyframes lvljs {
+    from {
+        width: 00px;
+    }
+    to {
+        width: 170px;
+    }
 }
 
 .myslides-photo {
@@ -285,7 +334,6 @@ header {
     from {
         opacity: .4
     }
-
     to {
         opacity: 1
     }
@@ -470,7 +518,6 @@ header {
     from {
         opacity: .4
     }
-
     to {
         opacity: 1
     }
@@ -864,7 +911,6 @@ header {
     text-align: center;
     padding-top: 150px;
     padding-bottom: 25px;
-
 }
 
 .footer-contact h2 {
@@ -996,8 +1042,6 @@ header {
     right: 0;
     margin: auto;
     z-index: 9999999;
-
-
 }
 
 .modal.opened {

@@ -280,7 +280,7 @@ header {
         width: 00px;
     }
     to {
-        width: 300px;
+        max-width: 300px;
     }
 }
 
@@ -289,7 +289,7 @@ header {
         width: 00px;
     }
     to {
-        width: 200px;
+        max-width: 200px;
     }
 }
 
@@ -298,7 +298,7 @@ header {
         width: 00px;
     }
     to {
-        width: 170px;
+        max-width: 170px;
     }
 }
 

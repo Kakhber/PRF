@@ -49,6 +49,10 @@ header{
 .satisfied-line{
     align-items: center;
 }
+.modal{
+    width: 200px;
+    height: 200px;
+}
 }
 @media (max-width: 990px){
 .recommend-div{
@@ -85,6 +89,9 @@ header{
 }
 #area-message{
     width: 80%;
+}
+.knowledge{
+    display: none;
 }
 }
 @media (max-width: 580px){
